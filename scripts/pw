@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# pw - Playwright Browser CLI for Codex
+# 用法: pw <command> [args...]
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+NODE_SCRIPT="$SCRIPT_DIR/pw.mjs"
+
+# 用已有的 playwright（全局缓存的浏览器 + 本地 Chrome）
+if [ ! -d "$SCRIPT_DIR/../node_modules/playwright" ]; then
+  cd "$SCRIPT_DIR/.." && npm init -y --silent 2>/dev/null && npm install --no-optional playwright --silent 2>/dev/null
+fi
+
+exec node "$NODE_SCRIPT" "$@"
