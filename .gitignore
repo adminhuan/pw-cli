@@ -5,3 +5,17 @@ yarn-error.log*
 pnpm-debug.log*
 .pw-session.json
 .pw.log
+
+# 云盘/下载工具同步临时文件(会反复生成删除, 否则每次备份都产生垃圾提交)
+*.baiduyun.uploading.cfg
+.*.baiduyun.uploading.cfg
+*.baiduyun*
+.baidu*
+*.crdownload
+*.download
+*.part
+*.!qB
+.~lock.*
+~$*
+.dropbox*
+.sync*
