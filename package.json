@@ -1,0 +1,27 @@
+{
+  "name": "pw-browser-control-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adminhuan/pw-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/adminhuan/pw-cli/issues"
+  },
+  "homepage": "https://github.com/adminhuan/pw-cli#readme",
+  "dependencies": {
+    "playwright": "^1.58.2"
+  }
+}
